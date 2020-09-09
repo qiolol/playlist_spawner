@@ -58,14 +58,14 @@ if (
     OUT_DIR = sys.argv[2]
 
     if not os.path.isdir(OUT_DIR):
-        sys.exit("ERROR! No such output directory: " + OUT_DIR)
+        sys.exit("spawn_playlists ERROR! No such output directory: " + OUT_DIR)
 
     for p in PLAYLISTS.items():
         playlist_str = ""
 
         for dir in p[1]:
             if not os.path.isdir(dir):
-                sys.exit("ERROR! No such directory: " + dir)
+                sys.exit("spawn_playlists ERROR! No such directory: " + dir)
             else:
                 playlist_str += dir_to_playlist(dir, sys.argv[1])
 
