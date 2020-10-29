@@ -8,7 +8,7 @@ from dirs_to_playlist import dir_to_playlist
 # Writes the playlists below (composed of directories) to corresponding        #
 # playlist files in the dir given in sys.argv[2]                               #
 #                                                                              #
-# What file type to add is based on on sys.argv[1]:                            #
+# What file type to add is based on sys.argv[1]:                               #
 #     "-a" for audio files ending with AUDIO_EXTENSIONS                        #
 #     "-v" for video files ending with VIDEO_EXTENSIONS                        #
 #     "-av" or "-va" for both audio and video files                            #
